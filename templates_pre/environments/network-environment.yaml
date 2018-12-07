@@ -1,0 +1,9 @@
+parameter_defaults:
+  NtpServer: '206.108.0.134'
+  NeutronNetworkType: 'vxlan,vlan'
+  NeutronTunnelTypes: 'vxlan'
+
+  EC2MetadataIp: 172.16.0.11
+  ControlPlaneDefaultRoute: 172.16.0.1
+  NeutronNetworkVLANRanges: 'datacentre:1:1000'
+  BondInterfaceOvsOptions: "bond_mode=active-backup"

@@ -1,0 +1,79 @@
+# Generated with the following on 2018-12-03T09:06:26.169479
+#
+#   openstack overcloud container image prepare --namespace=10.115.173.2:5000/rhosp13 --prefix=openstack- --tag-from-label {version}-{release} --output-env-file=/home/stack/templates/overcloud_images.yaml
+#
+
+parameter_defaults:
+  DockerAodhApiImage: 10.115.173.2:5000/rhosp13/openstack-aodh-api:13.0-62
+  DockerAodhConfigImage: 10.115.173.2:5000/rhosp13/openstack-aodh-api:13.0-62
+  DockerAodhEvaluatorImage: 10.115.173.2:5000/rhosp13/openstack-aodh-evaluator:13.0-62
+  DockerAodhListenerImage: 10.115.173.2:5000/rhosp13/openstack-aodh-listener:13.0-61
+  DockerAodhNotifierImage: 10.115.173.2:5000/rhosp13/openstack-aodh-notifier:13.0-62
+  DockerCeilometerCentralImage: 10.115.173.2:5000/rhosp13/openstack-ceilometer-central:13.0-59
+  DockerCeilometerComputeImage: 10.115.173.2:5000/rhosp13/openstack-ceilometer-compute:13.0-61
+  DockerCeilometerConfigImage: 10.115.173.2:5000/rhosp13/openstack-ceilometer-central:13.0-59
+  DockerCeilometerNotificationImage: 10.115.173.2:5000/rhosp13/openstack-ceilometer-notification:13.0-61
+  DockerCinderApiImage: 10.115.173.2:5000/rhosp13/openstack-cinder-api:13.0-63
+  DockerCinderConfigImage: 10.115.173.2:5000/rhosp13/openstack-cinder-api:13.0-63
+  DockerCinderSchedulerImage: 10.115.173.2:5000/rhosp13/openstack-cinder-scheduler:13.0-65
+  DockerCinderVolumeImage: 10.115.173.2:5000/rhosp13/openstack-cinder-volume:13.0-63
+  DockerClustercheckConfigImage: 10.115.173.2:5000/rhosp13/openstack-mariadb:13.0-62
+  DockerClustercheckImage: 10.115.173.2:5000/rhosp13/openstack-mariadb:13.0-62
+  DockerCrondConfigImage: 10.115.173.2:5000/rhosp13/openstack-cron:13.0-66
+  DockerCrondImage: 10.115.173.2:5000/rhosp13/openstack-cron:13.0-66
+  DockerGlanceApiConfigImage: 10.115.173.2:5000/rhosp13/openstack-glance-api:13.0-64
+  DockerGlanceApiImage: 10.115.173.2:5000/rhosp13/openstack-glance-api:13.0-64
+  DockerGnocchiApiImage: 10.115.173.2:5000/rhosp13/openstack-gnocchi-api:13.0-61
+  DockerGnocchiConfigImage: 10.115.173.2:5000/rhosp13/openstack-gnocchi-api:13.0-61
+  DockerGnocchiMetricdImage: 10.115.173.2:5000/rhosp13/openstack-gnocchi-metricd:13.0-62
+  DockerGnocchiStatsdImage: 10.115.173.2:5000/rhosp13/openstack-gnocchi-statsd:13.0-62
+  DockerHAProxyConfigImage: 10.115.173.2:5000/rhosp13/openstack-haproxy:13.0-62
+  DockerHAProxyImage: 10.115.173.2:5000/rhosp13/openstack-haproxy:13.0-62
+  DockerHeatApiCfnConfigImage: 10.115.173.2:5000/rhosp13/openstack-heat-api-cfn:13.0-60
+  DockerHeatApiCfnImage: 10.115.173.2:5000/rhosp13/openstack-heat-api-cfn:13.0-60
+  DockerHeatApiConfigImage: 10.115.173.2:5000/rhosp13/openstack-heat-api:13.0-61
+  DockerHeatApiImage: 10.115.173.2:5000/rhosp13/openstack-heat-api:13.0-61
+  DockerHeatConfigImage: 10.115.173.2:5000/rhosp13/openstack-heat-api:13.0-61
+  DockerHeatEngineImage: 10.115.173.2:5000/rhosp13/openstack-heat-engine:13.0-59
+  DockerHorizonConfigImage: 10.115.173.2:5000/rhosp13/openstack-horizon:13.0-60
+  DockerHorizonImage: 10.115.173.2:5000/rhosp13/openstack-horizon:13.0-60
+  DockerInsecureRegistryAddress:
+  - 10.115.173.2:5000
+  DockerIscsidConfigImage: 10.115.173.2:5000/rhosp13/openstack-iscsid:13.0-60
+  DockerIscsidImage: 10.115.173.2:5000/rhosp13/openstack-iscsid:13.0-60
+  DockerKeystoneConfigImage: 10.115.173.2:5000/rhosp13/openstack-keystone:13.0-60
+  DockerKeystoneImage: 10.115.173.2:5000/rhosp13/openstack-keystone:13.0-60
+  DockerMemcachedConfigImage: 10.115.173.2:5000/rhosp13/openstack-memcached:13.0-61
+  DockerMemcachedImage: 10.115.173.2:5000/rhosp13/openstack-memcached:13.0-61
+  DockerMysqlClientConfigImage: 10.115.173.2:5000/rhosp13/openstack-mariadb:13.0-62
+  DockerMysqlConfigImage: 10.115.173.2:5000/rhosp13/openstack-mariadb:13.0-62
+  DockerMysqlImage: 10.115.173.2:5000/rhosp13/openstack-mariadb:13.0-62
+  DockerNeutronApiImage: 10.115.173.2:5000/rhosp13/openstack-neutron-server:13.0-64
+  DockerNeutronConfigImage: 10.115.173.2:5000/rhosp13/openstack-neutron-server:13.0-64
+  DockerNeutronDHCPImage: 10.115.173.2:5000/rhosp13/openstack-neutron-dhcp-agent:13.0-66
+  DockerNeutronL3AgentImage: 10.115.173.2:5000/rhosp13/openstack-neutron-l3-agent:13.0-64
+  DockerNeutronMetadataImage: 10.115.173.2:5000/rhosp13/openstack-neutron-metadata-agent:13.0-65
+  DockerNovaApiImage: 10.115.173.2:5000/rhosp13/openstack-nova-api:13.0-67
+  DockerNovaComputeImage: 10.115.173.2:5000/rhosp13/openstack-nova-compute:13.0-70
+  DockerNovaConductorImage: 10.115.173.2:5000/rhosp13/openstack-nova-conductor:13.0-66
+  DockerNovaConfigImage: 10.115.173.2:5000/rhosp13/openstack-nova-api:13.0-67
+  DockerNovaConsoleauthImage: 10.115.173.2:5000/rhosp13/openstack-nova-consoleauth:13.0-66
+  DockerNovaLibvirtConfigImage: 10.115.173.2:5000/rhosp13/openstack-nova-compute:13.0-70
+  DockerNovaLibvirtImage: 10.115.173.2:5000/rhosp13/openstack-nova-libvirt:13.0-72
+  DockerNovaMetadataImage: 10.115.173.2:5000/rhosp13/openstack-nova-api:13.0-67
+  DockerNovaPlacementConfigImage: 10.115.173.2:5000/rhosp13/openstack-nova-placement-api:13.0-67
+  DockerNovaPlacementImage: 10.115.173.2:5000/rhosp13/openstack-nova-placement-api:13.0-67
+  DockerNovaSchedulerImage: 10.115.173.2:5000/rhosp13/openstack-nova-scheduler:13.0-67
+  DockerNovaVncProxyImage: 10.115.173.2:5000/rhosp13/openstack-nova-novncproxy:13.0-69
+  DockerOpenvswitchImage: 10.115.173.2:5000/rhosp13/openstack-neutron-openvswitch-agent:13.0-65
+  DockerPankoApiImage: 10.115.173.2:5000/rhosp13/openstack-panko-api:13.0-62
+  DockerPankoConfigImage: 10.115.173.2:5000/rhosp13/openstack-panko-api:13.0-62
+  DockerRabbitmqConfigImage: 10.115.173.2:5000/rhosp13/openstack-rabbitmq:13.0-63
+  DockerRabbitmqImage: 10.115.173.2:5000/rhosp13/openstack-rabbitmq:13.0-63
+  DockerRedisConfigImage: 10.115.173.2:5000/rhosp13/openstack-redis:13.0-64
+  DockerRedisImage: 10.115.173.2:5000/rhosp13/openstack-redis:13.0-64
+  DockerSwiftAccountImage: 10.115.173.2:5000/rhosp13/openstack-swift-account:13.0-61
+  DockerSwiftConfigImage: 10.115.173.2:5000/rhosp13/openstack-swift-proxy-server:13.0-61
+  DockerSwiftContainerImage: 10.115.173.2:5000/rhosp13/openstack-swift-container:13.0-64
+  DockerSwiftObjectImage: 10.115.173.2:5000/rhosp13/openstack-swift-object:13.0-61
+  DockerSwiftProxyImage: 10.115.173.2:5000/rhosp13/openstack-swift-proxy-server:13.0-61

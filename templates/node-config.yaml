@@ -1,0 +1,22 @@
+parameter_defaults:
+  NetworkDeploymentActions: ['CREATE','UPDATE']
+
+  ControllerCount: 1
+  OvercloudControllerFlavor: control
+
+  ComputeCount: 2
+  OvercloudComputeFlavor: compute
+
+  ObjectStorageCount: 0
+  OvercloudObjectStorageFlavor: swift-storage
+
+  OvercloudNetworkerFlavor: networker
+  NetworkerCount: 0
+
+  BarbicanSimpleCryptoGlobalDefault: true
+
+# additional settings
+
+  NovaReservedHostMemory: 1024
+  DockerPuppetProcessCount: 1
+  DockerPuppetDebug: 'True'

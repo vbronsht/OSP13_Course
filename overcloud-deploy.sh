@@ -1,0 +1,27 @@
+time openstack overcloud deploy \
+        --templates /usr/share/openstack-tripleo-heat-templates \
+        -e templates/overcloud_images.yaml \
+        -n templates/environments/network_data.yaml \
+        -r templates/roles_data.yaml \
+        -e templates/environments/network-isolation.yaml \
+        -e /usr/share/openstack-tripleo-heat-templates/environments/network-environment.yaml \
+        -e templates/environments/network-environment.yaml \
+        -e templates/environments/net-bond-with-vlans.yaml \
+        -e templates/node-config.yaml \
+        -e templates/inject-trust-anchor-hiera.yaml \
+        -e templates/HostnameMap.yaml \
+        -e templates/ips-from-pool-all.yaml \
+        -e templates/networker-flavor.yaml \
+        -e /home/stack/templates/enable-tls.yaml \
+        -e /home/stack/templates/inject-trust-anchor.yaml \
+        -e /usr/share/openstack-tripleo-heat-templates/environments/tls-endpoints-public-ip.yaml \
+        -e /home/stack/templates/neutron-ovs-dvr.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/hyperconverged-ceph.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-rgw.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-ansible.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/cinder-backup.yaml  \
+-e /usr/share/openstack-tripleo-heat-templates/environments/services-docker/octavia.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/services/barbican.yaml \
+-e /usr/share/openstack-tripleo-heat-templates/environments/barbican-backend-simple-crypto.yaml  \
+-e /usr/share/openstack-tripleo-heat-templates/environments/disable-telemetry.yaml \
+-e /home/stack/templates/environments/storage-ceph-hyperconverged-environment.yaml
